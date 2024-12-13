@@ -1,0 +1,534 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 8px;
+}
+
+p {
+    font-family: "Overpass", sans-serif;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-family: "Overpass", sans-serif;
+    margin-bottom: 0.67em;
+}
+
+h2 {
+    font-family: "Overpass", sans-serif;
+    margin-bottom: 0.83em;
+}
+
+h5 {
+    font-size: 18px;
+    font-family: "Overpass", sans-serif;
+    margin-bottom: 1.5em;
+}
+
+a{
+    color: black; 
+    text-decoration: none;
+}
+
+a:hover{
+    text-shadow: 1px 1px 2px #edc36941, 0 0 1em #edc36941, 0 0 0.2em #edc36941;
+}
+
+label {
+    font-family: "Overpass", sans-serif;
+    margin-bottom: 0.5em;
+}
+
+input {
+    font-family: "Overpass", sans-serif;
+    color: #edc369;
+    margin-bottom: 0.5em;
+}
+
+option {
+    font-family: "Overpass", sans-serif;
+    color: #edc369;
+}
+
+aside {
+    padding-right: 5%;
+    margin-right: 3%;
+}
+
+main {
+    line-height: 250%;
+    margin-right: 50px;
+}
+
+.head_1 {
+    margin-bottom: 2%;
+}
+
+.navigation_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: solid;
+    border-color: #edc369;
+    border-radius: 35px;
+    margin-bottom: 2%;
+    padding-top: 25px;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 1;
+    width: 75%;
+    margin-bottom: 1em;
+}
+
+td, th {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: #edc369;
+    background-color: #edc36922;
+    margin-bottom: 0.5em;
+}
+
+tr:hover{
+    background-color: #edc3696f;
+}
+
+.logo {
+    height: 35px;
+    width: 35px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.info_up {
+    margin: 3%;
+}
+
+.info_up_2 {
+    margin: 3%;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: 0 30px;
+}
+
+.foto img {
+    max-height: 300px;
+    width: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.social_networks {
+    flex-direction: row;
+}
+
+input {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    padding: 3px 12px;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5em; 
+}
+
+#table2{
+    display: none;
+}
+
+#table1{
+    display: block;
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    background-color: #000000;
+    border: solid transparent;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    color: #edc369;
+    font-size: medium;
+    cursor: pointer;
+}
+
+button:hover{
+    height: 50px;
+    width: 200px;
+    background-color: #edc369;
+    border: solid transparent;
+    border-radius: 50px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+    color: #000000;
+    font-size: medium;
+}
+
+#Table {
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#Table.visible {
+    opacity: 1;
+    max-height: 100%; /* Установите значение, которое будет достаточно большим для отображения всего содержимого */
+}
+
+
+
+
+
+
+
+
+@media (min-width: 389px) and (max-width: 600px){
+    
+    body {
+        margin: 8px;
+    }
+    
+    p {
+        font-size: 12px;
+        font-family: "Overpass", sans-serif;
+        margin-bottom: 1em;
+    }
+    
+    h1 {
+        font-family: "Overpass", sans-serif;
+        margin-bottom: 0.67em;
+    }
+    
+    h2 {
+        font-family: "Overpass", sans-serif;
+        margin-bottom: 0.83em;
+    }
+    
+    h5 {
+        font-size: 12px;
+        font-family: "Overpass", sans-serif;
+        margin-bottom: 1.5em;
+    }
+    
+    a{
+        color: black; 
+        text-decoration: none;
+        text-shadow: 1px 1px 2px #edc36941, 0 0 1em #edc36941, 0 0 0.2em #edc36941;
+    }
+    
+    label {
+        font-family: "Overpass", sans-serif;
+        margin-bottom: 0.5em;
+    }
+    
+    input {
+        font-family: "Overpass", sans-serif;
+        color: #edc369;
+        margin-bottom: 0.5em;
+    }
+    
+    option {
+        font-family: "Overpass", sans-serif;
+        color: #edc369;
+    }
+    
+    aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 5%;
+        margin-right: 3%;
+    }
+    
+    main {
+        line-height: 170%;
+        margin-right: 15px;
+    }
+    
+    .head_1 {
+        margin-bottom: 2%;
+    }
+    
+    .navigation_1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: solid;
+        border-color: #edc369;
+        border-radius: 35px;
+        margin-bottom: 2%;
+        padding-top: 25px;
+    }
+    
+    table {
+        border-collapse: separate;
+        border-spacing: 1;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    
+    td, th {
+        text-align: center;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 10px;
+        border-color: #edc369;
+        background-color: #edc36922;
+        margin-bottom: 0.5em;
+    }
+    
+    tr:hover{
+        background-color: #edc3696f;
+    }
+    
+    .logo {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+    
+    .info_up {
+        margin: 3%;
+    }
+    
+    .info_up_2 {
+        margin: 3%;
+    }
+    
+    .fotos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .foto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        margin: 0 30px;
+    }
+    
+    .foto img {
+        max-height: 300px;
+        width: auto;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    
+    .social_networks {
+        flex-direction: row;
+    }
+    
+    input {
+        width: 15px;
+        height: 15px;
+        border-radius: 20px;
+        padding: 3px 12px;
+        border: 1px solid #ccc;
+        margin-bottom: 0.5em;
+    }
+
+    iframe {
+        width: 90%;
+        height: 90%;
+    }
+
+}
+
+
+
+@media (min-width: 601px) and (max-width: 1200px){
+    
+    body {
+        margin: 8px;
+    }
+    
+    p {
+        font-size: 14px;
+        font-family: "Overpass", sans-serif;
+        margin-bottom: 1em;
+    }
+    
+    h1 {
+        font-family: "Overpass", sans-serif;
+        margin-bottom: 0.67em;
+    }
+    
+    h2 {
+        font-family: "Overpass", sans-serif;
+        margin-bottom: 0.83em;
+    }
+    
+    h5 {
+        font-size: 14px;
+        font-family: "Overpass", sans-serif;
+        margin-bottom: 1.5em;
+    }
+    
+    a{
+        color: black; 
+        text-decoration: none;
+        text-shadow: 1px 1px 2px #edc36941, 0 0 1em #edc36941, 0 0 0.2em #edc36941;
+    }
+    
+    label {
+        font-family: "Overpass", sans-serif;
+        margin-bottom: 0.5em;
+    }
+    
+    input {
+        font-family: "Overpass", sans-serif;
+        color: #edc369;
+        margin-bottom: 0.5em;
+    }
+    
+    option {
+        font-family: "Overpass", sans-serif;
+        color: #edc369;
+    }
+    
+    aside {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 5%;
+        margin-right: 3%;
+    }
+    
+    main {
+        line-height: 170%;
+        margin-right: 15px;
+    }
+    
+    .head_1 {
+        margin-bottom: 2%;
+    }
+    
+    .navigation_1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: solid;
+        border-color: #edc369;
+        border-radius: 35px;
+        margin-bottom: 2%;
+        padding-top: 25px;
+    }
+    
+    table {
+        border-collapse: separate;
+        border-spacing: 1;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    
+    td, th {
+        text-align: center;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 10px;
+        border-color: #edc369;
+        background-color: #edc36922;
+        margin-bottom: 0.5em;
+    }
+    
+    tr:hover{
+        background-color: #edc3696f;
+    }
+    
+    .logo {
+        height: 35px;
+        width: 35px;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+    
+    .info_up {
+        margin: 3%;
+    }
+    
+    .info_up_2 {
+        margin: 3%;
+    }
+    
+    .fotos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .foto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+        margin: 0 30px;
+    }
+    
+    .foto img {
+        max-height: 300px;
+        width: auto;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    
+    .social_networks {
+        flex-direction: row;
+    }
+    
+    input {
+        width: 15px;
+        height: 15px;
+        border-radius: 20px;
+        padding: 3px 12px;
+        border: 1px solid #ccc;
+        margin-bottom: 0.5em;
+    }
+
+    iframe{
+        width: 80%;
+        height: 120%;
+    }
+
+}
